@@ -4,7 +4,6 @@
 }
 .main{
 	background-color: silver;
-	padding:0px;
 }
 mark{
 background-color:black;
@@ -13,14 +12,52 @@ color:white
 p{
 	padding-bottom:20px;
 }
-
-.footer{
-	text-align: center;
-}
 .footer__a{
 	background-color: orange;
 	color:blue;
 }
 .footer__b{
 	background-color: peachpuff;
+}
+.main__below-text {
+	font-size: 20px;
+	text-align: center;
+}
+.main__below-title {
+	font-size: 25px;
+	color: blue;
+	background-color: #D2691E;
+	padding-bottom: 20px;
+	margin: 0;
+}
+.main__below-text .bg-color {
+		background-color: #FFFACD;
+		padding-bottom: 20px ;
+		margin: 0;
+}
+.main__below-text p {
+	background-color:  #D2691E;
+	padding-bottom: 20px;
+	margin: 0;
+}
+.main__below-second {
+	font-size: 20px;
+	text-align: left;
+} 
+.main__below-second-title {
+	color: #4B0082;
+	background-color: #00FFFF;
+}
+.main__below-second p {
+	color: #4B0082;
+	background-color:#FF69B4;
+}
+.footer {
+	background-color:#FFE4B5;
+	text-align: center;
+}
+.footer-title{
+	font-size: 40px;
+	color: red;
+	padding:5px;
 }
