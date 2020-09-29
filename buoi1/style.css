@@ -1,0 +1,26 @@
+*{
+	margin:0;
+	padding:0;
+}
+.main{
+	background-color: silver;
+	padding:0px;
+}
+mark{
+background-color:black;
+color:white
+}
+p{
+	padding-bottom:20px;
+}
+
+.footer{
+	text-align: center;
+}
+.footer__a{
+	background-color: orange;
+	color:blue;
+}
+.footer__b{
+	background-color: peachpuff;
+}
