@@ -1,0 +1,166 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+.header{
+	background-color: mediumspringgreen;
+	width:100%;
+	height:300px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom:20px;
+}
+.infor{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	align-items: center;
+	height:100%;
+
+}
+.avatar__img{
+	border:1px solid white;
+	width:200px;
+	height:200px;
+	border-radius: 180px;
+	background-color: white;
+	z-index: 2;
+}
+.information{
+	flex-basis: 70%;
+	color:white;
+	z-index: 2;
+}
+.icon__header{
+	font-size: 30px;
+	color:white;
+	margin:5px;
+	z-index: 2;
+}
+.icon__header:hover{
+	color:red;
+}
+
+.beautiful{
+	background-color: yellow;
+	width:105%;
+	height:200px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	border-radius: 40% 30%;
+	transform: translateY(50%);
+}
+
+
+.section{
+	width:80%;
+	margin:0 auto;
+}
+
+.title{
+	border:3px solid orange;
+	height:50px;
+	width:50%;
+	margin:0 auto;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+}
+.title::before{
+	border:5px solid orange;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	left:-40px;
+	width:40px;
+	height:40px;
+	background-color: white;
+
+}
+.title::after{
+	border:5px solid orange;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	left:272px;
+	width:40px;
+	height:40px;
+	background-color: white;
+
+} */
+
+
+.section__body{
+	display: flex;
+	justify-content:space-between;
+
+}
+.section__body--main{
+	flex-basis: 70%;
+	margin:10px;
+}
+.section__body--blog{
+	flex-basis: 30%;
+	margin:10px;
+}
+
+.cover{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.cover__table{
+	flex-basis: 31%;
+	border:1px solid olivedrab;
+	height:300px;
+	margin:3px 0;
+}
+.cover__table img{
+	width:100%;
+	margin-bottom:30px;
+}
+
+.education{
+	background-color: seagreen;
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	color:white;
+}
+
+.blog__son{
+	border:1px solid olivedrab;
+	height:70px;
+	width:100%;
+	margin:5px 0;
+
+}
+.blog__content{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	height:100%;
+}
+.blog__content--img{
+	border:1px solid olivedrab;
+	height:50px;
+	width:50px;
+	border-radius: 180px;
+	background-color: olivedrab;
+}
+.blog__content--text{
+	flex-basis: 70%;
+}
+
+.footer{
+	background-color: orange;
+	width:100%;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+	color:white
+}
