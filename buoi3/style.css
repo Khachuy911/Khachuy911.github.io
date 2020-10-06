@@ -86,12 +86,14 @@
 	border-radius: 50%;
 	content: '';
 	position: absolute;
-	left:272px;
+	right:-40px;
 	width:40px;
 	height:40px;
 	background-color: white;
 
-} */
+}
+
+
 
 
 .section__body{
@@ -100,11 +102,11 @@
 
 }
 .section__body--main{
-	flex-basis: 70%;
+	flex-basis: 65%;
 	margin:10px;
 }
 .section__body--blog{
-	flex-basis: 30%;
+	flex-basis: 25%;
 	margin:10px;
 }
 
