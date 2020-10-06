@@ -21,12 +21,14 @@
 
 }
 .avatar__img{
-	border:1px solid white;
+	z-index: 2;
+}
+.avatar__img img{
+	width:100%;
+	border:2px solid teal;
 	width:200px;
 	height:200px;
 	border-radius: 180px;
-	background-color: white;
-	z-index: 2;
 }
 .information{
 	flex-basis: 70%;
