@@ -123,7 +123,21 @@ button{
 	align-items: center;
 	flex-wrap: wrap;
 }
-.main__information, .main__information--text{
+.main__information {
+	flex-basis: 50%;
+	position: relative;
+}
+.sale{
+	position: absolute;
+	top:20px;
+	right:20px;
+	background-color: red;
+	color:white;
+	padding:8px 16px;
+	border:1px solid red;
+	border-radius: 20px;
+}
+.main__information--text{
 	flex-basis: 50%;
 }
 .main__information img{
