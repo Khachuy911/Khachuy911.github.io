@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="casio.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="name"><p>Huyk Casio</p></div>
+		<div class="screen"><input type="text" id="result"></div> 
+		<div class="number">
+			<div class="row1">
+				<button class="bnt" value="1" onclick="result.value += this.value">1</button>
+				<button class="bnt" value="2" onclick="result.value += this.value">2</button>
+				<button class="bnt" value="3" onclick="result.value += this.value">3</button>
+			</div>
+			<div class="row2">
+				<button class="bnt" value="4" onclick="result.value += this.value">4</button>
+				<button class="bnt" value="5" onclick="result.value += this.value">5</button>
+				<button class="bnt" value="6" onclick="result.value += this.value">6</button>
+			</div>
+			<div class="row3">
+				<button class="bnt" value="7" onclick="result.value += this.value">7</button>
+				<button class="bnt" value="8" onclick="result.value += this.value">8</button>
+				<button class="bnt" value="9" onclick="result.value += this.value">9</button>
+			</div>
+			<div class="row4">
+				<button class="bnt" value="+" onclick="result.value += this.value">+</button>
+				<button class="bnt" value="-" onclick="result.value += this.value">-</button>
+				<button class="bnt" value="*" onclick="result.value += this.value">*</button>
+			</div>
+			<button class="bnt" value="/" onclick="result.value += this.value">/</button>
+			<button class="bnt" onclick="result.value=' '">AC</button>
+			<!-- <button class="bnt" value="=" onclick="result.value = eval(result.value)">=</button> -->
+			<button class="bnt" value="=" onclick="result.value = eval(result.value)">=</button>
+		</div>
+	</div>
+	
+</body>
+</html>
