@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	margin: 10% 35%;
+	width:200px;
+	background-color: dimgrey;
+	border-radius: 10px;
+}
+.name{
+	color:white;
+	text-align: right;
+	padding:3px;
+}
+.screen{
+	text-align: center;
+}
+.number{
+	text-align: center;
+	padding:10px 0;
+}
+input{
+	width:96%;
+	height:40px;
+}
+.bnt{
+	width:30%;
+	height:40px;
+}
