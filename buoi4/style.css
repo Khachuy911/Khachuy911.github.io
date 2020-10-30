@@ -1,0 +1,260 @@
+*{
+	padding:0;
+	margin:0;
+}
+.wrapper{
+	position: relative;
+}
+.layout{
+	display: flex;
+	
+	width:100%;
+
+}
+
+/* img main */
+.images{
+	width: 40%;
+}
+.images img{
+	position: sticky;
+	top: 0px;
+	width:100%;
+	height:100vh;
+}
+
+/* body main  */
+
+/* head */
+.container{
+	width:60%; 
+	}
+.container__body{	
+	text-align: center;
+	margin:100px 25px;
+}
+.janeDoe h1{
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+
+.images__hover img{
+	display: none;
+	width:50%;
+	height:auto;
+	margin:0 auto;
+}
+.down button{
+	margin: 50px 0;
+	padding:15px;
+	border:1px solid white;
+	width:250px
+}
+
+/* images main */
+.img__main{
+	width:95%;
+	margin: 0 auto;
+}
+ h1,h2{
+	margin: 10px;
+	font-weight: lighter;
+}
+.myPortfolio{
+	display: flex;
+	overflow: hidden;
+}
+.myPortfolio img{
+	width:97%;
+	margin:10px;
+}
+
+/* text about */
+
+.text__about{
+	margin-top: 70px;
+}
+.text__about p{
+	font-size: 22px;
+}
+ /* my skills */
+
+.Photography__bgr{
+	background-color: silver;
+	height:25px;
+	width:100%;
+}
+.Photography__bgr .Photography__status{
+	background-color:rgb(141, 138, 138) ;
+	width:95%;
+	height:25px;
+	text-align: center;
+	line-height: 25px;;
+}
+.Webdesign__bgr{
+	background-color: silver;
+	height:25px;
+	width:100%;
+}
+.Webdesign__bgr .Webdesign__status{
+	background-color:rgb(141, 138, 138) ;
+	width:85%;
+	height:25px;
+	text-align: center;
+	line-height: 25px;;
+}
+.Photoshop__bgr{
+	background-color: silver;
+	height:25px;
+	width:100%;
+}
+.Photoshop__bgr .Photoshop__status{
+	background-color:rgb(141, 138, 138) ;
+	width:80%;
+	height:25px;
+	text-align: center;
+	line-height: 25px;;
+}
+
+
+/* project */
+
+.project{
+	display: flex;
+	background-color:rgb(39, 32, 32) ;
+	height:100px;
+	align-items: center;
+	width:100%;
+	margin-top:50px;
+}
+.project__table{
+	width:25%;
+	text-align: center;
+	color:white;
+}
+
+/* My Reputation */
+
+.myreputation__layout{
+	display: flex;
+	margin:10px;
+	align-items: center;
+}
+.avatar{
+	background-color: orangered;
+	width:100px;
+	height:100px;
+	border: 1px solid orangered;
+	border-radius:50%;
+	margin-right:10px;
+}
+
+/* basic - pro */
+
+.basic__pro{
+	display: flex;
+	align-items: center;
+	width:100%;
+}
+.basic{
+	flex-basis: 50%;
+	border:1px solid silver;
+	text-align: center;
+	margin:5px;
+}
+.basic__text , h4{
+	height:50px;
+	line-height: 50px;
+	border-bottom: 1px solid silver;
+}
+.basic h4{
+	font-size: 30px;
+	padding:30px;
+	background-color: rgb(59, 50, 50);
+}
+.basic button{
+	border: none;
+	padding:15px 20px;
+	background-color: silver;
+	outline: none;
+	margin:10px;
+	width:100px;
+}
+.basic button:hover{
+	background-color: red;
+}
+
+
+.contactme__item i{
+	margin:20px;
+	font-size: 25px;
+}
+.imgs img{
+	width:100%;
+}
+
+.inputinfo input{
+	width:100%;
+	height:50px;
+	margin:15px;
+}
+
+.item{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px) and (min-width:400px){
+	.layout{
+		display: block;
+	}
+	.container{
+		width:100%;
+	}
+	.images img{
+		display: none;
+	}
+	.images__hover img{
+		display: block;
+	}
+}
+
+@media screen and (max-width:399px){
+	.layout{
+		display: block;
+	}
+	.container{
+		width:100%;
+	}
+	.images img{
+		display: none;
+	}
+	.images__hover img{
+		display: block;
+	}
+	.myPortfolio{
+		display: block;
+	}
+	.project{
+		flex-direction: column;
+		height:280px;		
+	}
+	.project__table{
+		width:100%;
+		height:70px;
+	}
+	.basic__pro{
+		flex-direction: column;
+	}
+	.basic{
+		width:100%;
+	}
+}
