@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: violet;
+
+}
+form{
+	width :50%;
+	margin:200px auto;
+	border:1px solid white;
+	background-color: thistle;
+	text-align: center;
+	height:500px;
+}
+input,button {
+	outline: none;
+	border:1px solid white;
+	background-color: white;
+	height:50px;
+	width:300px;
+	padding:10px;
+	margin:20px;
+}
+input:hover , button:hover{
+	background-color: teal;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
