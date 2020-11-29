@@ -2,8 +2,12 @@
 	margin:0;
 	padding:0;
 }
+body{
+	font-family: serif;
+}
 .wrapper{
 	width:100%;
+
 }
 
 /* Header */
@@ -68,17 +72,19 @@
 	display: none;
 }
 .name__bookRooms button{
+	outline:none;
 	background-color:rgb(69, 92, 115) ;
-	border:1px solid;
+	border:1px solid #51cba3;
 	color:white;
-	padding:13px;
+	padding:12px;
 	width:180px;
 	cursor: pointer;
-}
-.name__bookRooms button:hover{
+} 
+ .name__bookRooms button:hover{
 	border:1px solid #51cba3;
 	background-color:#51cba3 ;
 }
+
 
 /* mark__page */
 .mark__page{
@@ -109,7 +115,6 @@
 	margin-bottom: 100px;
 }
 .background__main h1{
-	font-family: 'Srisakdi', cursive;
 	color:#51cba3;
 	padding: 10px;
 }
@@ -144,7 +149,7 @@
 	border:1px solid silver;
 	height:100%;
 }
-#carouselExampleIndicators{
+#carouselExampleIndicators,#carouselExampleControls,#carouselExampleCaptions{
 	width:100%;
 	padding:10px;
 }
@@ -170,17 +175,18 @@
 	font-size: 80px;
 }
 .section__info--text button{
-	border:1px solid;
+	border:1px solid #51cba3;
 	color:#51cba3;
 	padding:10px;
 	width:150px;
 	cursor: pointer;
-	outline: white ;
+	outline: none;
 }
 .section__info--text button:hover{
 	border:1px solid #51cba3;
 	background-color:#51cba3 ;
 	color:white;
+	outline: none;
 }
 
 .section__info--bgrcl{
@@ -203,14 +209,14 @@
 	color:white;
 }
 
-.footer__info,.footer__recent,.footer__contact{
+.footer__recent,.footer__contact{
+	margin-top:10px;
+}
+.footer__info, .footer__recent,.footer__contact{
 	width:33%;
 }
 .footer__info img,.footer__recent h2,.footer__contact h2{
 	padding:0 50px;
-}
-.footer__info p, .footer__recent--p,.footer__contact--p{
-	padding:50px;
 }
 
 .footer__recent span{
@@ -255,11 +261,13 @@
 	.section__info--text{
 		width:100%;
 		margin:10px;
-		order: 2;
 	}
 	.section__info--img{
 		width:100%;
-		order: 1;
+	}
+	.section__info--bgrcl .section__info{
+		display:flex;
+		flex-direction: column-reverse;
 	}
 	/*  */
 	.footer{

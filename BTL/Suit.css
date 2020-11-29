@@ -2,9 +2,11 @@
 	margin:0;
 	padding:0;
 }
+body{
+	font-family: serif;
+}
 .wrapper{
 	width:100%;
-	overflow: hidden;
 }
 
 /* Header */
@@ -43,8 +45,7 @@
 	width:50%;
 }
 .menu__icon{
-	margin:3px;
-
+	margin:0 3px;
 }
 .name__menu ul{
 	display: flex;
@@ -69,15 +70,15 @@
 	display: none;
 }
 .name__bookRooms button{
+	outline:none;
 	background-color:rgb(69, 92, 115) ;
-	border:1px solid;
+	border:1px solid #51cba3;
 	color:white;
-	padding:13px;
+	padding:15px;
 	width:180px;
 	cursor: pointer;
-	outline: none;
-}
-.name__bookRooms button:hover{
+} 
+ .name__bookRooms button:hover{
 	border:1px solid #51cba3;
 	background-color:#51cba3 ;
 }
@@ -111,7 +112,6 @@
 	margin-bottom: 100px;
 }
 .background__main h1{
-	font-family: 'Srisakdi', cursive;
 	color:#51cba3;
 	padding: 10px;
 }
@@ -167,14 +167,14 @@ section{
 }
 .main__menufood--text-priceName p{
 	color:silver;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .main__menufood--img{
 	border:1px solid rgb(228, 222, 222);
 }
 .main__menufood--img img{
-	padding:10px;
+	padding:13px;
 	width:97%;
 }
 /*  */
@@ -325,7 +325,7 @@ section{
 		margin-left:0px;
 	}
 	.main__menufood--img img, .main__menufood--imgReverse img{
-		width:97%;
+		width:98%;
 		padding:10px;
 	}
 	.price--name{
