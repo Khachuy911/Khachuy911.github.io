@@ -4,6 +4,7 @@
 }
 .wrapper{
 	width:100%;
+	overflow: hidden;
 }
 
 /* Header */
@@ -74,6 +75,7 @@
 	padding:13px;
 	width:180px;
 	cursor: pointer;
+	outline: none;
 }
 .name__bookRooms button:hover{
 	border:1px solid #51cba3;
@@ -99,7 +101,7 @@
 }
 /* background main */
 .background__main{
-	background-image: url(https://ld-wp.template-help.com/wordpress_62442_v3/wp-content/uploads/2016/11/rooms-suites-1.jpg);
+	background-image: url(dining-1-1.jpg);
 	width:100%;
 	height:650px;
 	display: flex;
@@ -132,68 +134,138 @@
 
 /* section */
 
-.section__info{
-	display: flex;
-	margin:200px 0;
+section{
+	width:100%;
+}
+.section__title{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.main__menufood{
 	width:90%;
 	margin:0 auto;
-	padding:100px 0;
+	display: flex;
+	margin-bottom: 100px;
 }
-.section__info--img{
-	width:50%;
-	border:1px solid silver;
-	height:100%;
-}
-#carouselExampleIndicators{
+.main__menufood--text,.main__menufood--img{
 	width:100%;
-	padding:10px;
 }
-.section__info--text{
-	width:50%;
-	padding:0 40px;
-	text-align: left;
+/*  */
+.main__menufood--text-priceName{   /*res*/
+	width:90%;
 }
-.section__info--text p{
-	padding:15px;
-	font-size: 18px;
+.price--name{
+	display: flex;
+	justify-content: space-between;
 }
-.section__info--text ul li{
-	margin:10px 30px;
-}
-.section__info--text ul li span{
+.price__food{
 	color:#51cba3;
 }
-.section__info--text h4{
+.name__food:hover{
 	color:#51cba3;
-}
-.section__info--text h4 span{
-	font-size: 80px;
-}
-.section__info--text button{
-	border:1px solid;
-	color:#51cba3;
-	padding:10px;
-	width:150px;
 	cursor: pointer;
-	outline: white ;
 }
-.section__info--text button:hover{
-	border:1px solid #51cba3;
-	background-color:#51cba3 ;
+.main__menufood--text-priceName p{
+	color:silver;
+	margin-bottom: 40px;
+}
+
+.main__menufood--img{
+	border:1px solid rgb(228, 222, 222);
+}
+.main__menufood--img img{
+	padding:10px;
+	width:97%;
+}
+/*  */
+
+.Desserts{
+	width:100%;
+	background-color: rgb(248, 248, 248);
+	border:1px solid white;
+	margin-bottom: 100px;
+}
+.Desserts__title{
+	text-align: center;
+	margin:100px;
+}
+.Desserts__layout{
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+.Desserts__layout--food{  /* res */
+	width:27%;
+}
+.Desserts__layout--food-img{
+	border:1px solid white;
+	background-color: white;
+}
+.Desserts__layout--food-img img{
+	width:100%;
+	padding:20px;
+}
+.Desserts__layout--food-text h3:hover{
+	color:#51cba3;
+	cursor: pointer;
+}
+.Desserts__layout--food-text h4{
+	color:#51cba3;
+	padding:10px 0;
+}
+.Desserts__layout--food-text p{
+	color:silver;
+}
+/*  */
+.main__menufood--reverse{
+	width:90%;
+	display: flex;
+	margin:0 auto;
+	flex-direction: row-reverse;
+	margin-bottom: 100px;
+}
+
+.main__menufood--text-priceNameReverse{
+	margin-left:50px;
+}
+.main__menufood--textReverse p{
+	color:silver;
+	margin-bottom: 40px;
+}
+
+/*  */
+.download{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#51cba3;
+	height:300px;
+	text-align: center;
+	width:100%;
+}
+
+.download button{
+	background-color:white ;
+	border:1px solid white;
+	color:black;
+	padding:13px;
+	width:180px;
+	cursor: pointer;
+	margin-top:20px;
+	outline: none;
+}
+.download button:hover{
+	border:1px solid black ;
+	background-color:black ;
 	color:white;
 }
 
-.section__info--bgrcl{
-	background-color: rgb(247, 240, 240);
-	margin:100px 0;
-}
-
-/* footers */
+/* footer */
 .footers{
 	width:100%;
 	height:700px;
 	background-color: rgb(39, 31, 47);
-	margin-top:-100px;
+
 }
 .footer{
 	width:100%;
@@ -212,7 +284,9 @@
 .footer__info p, .footer__recent--p,.footer__contact--p{
 	padding:50px;
 }
-
+.footer__contact--p p{
+	padding:5px;
+}
 .footer__recent span{
 	color:#51cba3;
 }
@@ -237,6 +311,41 @@
 }
 
 
+
+@media screen and (max-width:1100px) and (min-width:100px){
+	.main__menufood,.main__menufood--reverse{
+		width:90%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+	.main__menufood--text-priceName, .main__menufood--text-priceNameReverse{ 
+		width:100%;
+		margin-left:0px;
+	}
+	.main__menufood--img img, .main__menufood--imgReverse img{
+		width:97%;
+		padding:10px;
+	}
+	.price--name{
+		display: block;
+	}
+	.Desserts__layout{
+		flex-direction: column;
+	}
+	.Desserts__layout--food{  /* res */
+		width:90%;
+		margin:0 auto;
+	}
+	.Desserts__layout--food-img img{
+		padding:10px;
+		width:97%;
+	}
+}
+
+
+/*  */
 @media screen and (max-width:1100px) and (min-width:700px){
 	.name__menu{
 		display: none;
@@ -249,19 +358,6 @@
 		justify-content: space-between;	
 	}
 	/*  */
-	.section__info{
-		display: block;
-	}
-	.section__info--text{
-		width:100%;
-		margin:10px;
-		order: 2;
-	}
-	.section__info--img{
-		width:100%;
-		order: 1;
-	}
-	/*  */
 	.footer{
 		padding:10px;
 		justify-content: space-between;
@@ -272,8 +368,7 @@
 	.footer__info img,.footer__recent h2,.footer__contact h2{
 		padding:10px;
 	}
-} 
-
+}
 @media screen and (max-width:699px) and (min-width:100px){
 	.header{
 		text-align: center;
@@ -297,55 +392,30 @@
 	.name__bookRooms button{
 		margin-top: 20px;
 	}
-	
-	/*  */
-	
-
-	.background__main {
-		height:1000px;
-
-	}
-	.background__main p{
-		width:90%;
-		padding:5px;
-	}
 	.background__main h2{
-		font-size: 16px;
+		font-size: 20px;
+		color: white;
 	}
-	.section__info{
-		display: block;
-	}
-	.section__info--text{
-		width:100%;
-		margin:10px;
-		padding:10px 0px;
-	}
-	.section__info--img{
-		width:100%;
-	}
-
 	/*  */
 	.footers{
-		height:1100px;
+		height:900px;
 	}
 	.footer{
 		display: block;
+		padding:10px;
 	}
 	.footer__info,.footer__recent,.footer__contact{
 		width:100%;
 	}
 	.footer__info img,.footer__recent h2,.footer__contact h2{
-		padding:5px;
+		padding:0px;
 		margin-top:50px;
 	}
 	.footer__info p, .footer__recent--p,.footer__contact--p{
 		width:90%;
 		padding:0px;
 	}
+	.link{
+		margin-top:100px;
+	}
 }
-
-
-
-
-
-/* order  */
