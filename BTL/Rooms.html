@@ -35,32 +35,102 @@
 				</div>
 				<div class="name__menu">
 					<ul>
-						<li>HOME<i class="fa fa-angle-down menu__icon"></i></li>
-						<li class="page">ROOMS & SUITES</li>
-						<li>DINING & BAR</li>
+						<li class="hoverHome">HOME<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--home">
+								<ul>
+									<li>ROOMS & SUITES</li>
+									<li>STATUS</li>
+									<li>DINING & BAR</li>
+									<li>BLOG</li>
+								</ul>
+							</div>
+						</li>
+						<li>ROOMS & SUITES</li>
+						<li class="page">DINING & BAR</li>
 						<li>AMENITIES</li>
-						<li>BLOG<i class="fa fa-angle-down menu__icon"></i></li>
-						<li>MORE<i class="fa fa-angle-down menu__icon"></i></li>
+						<li class="hoverBlog">BLOG<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--blog">
+								<ul>
+									<li>ROOMS & SUITES</li>
+									<li>STATUS</li>
+									<li>DINING & BAR</li>
+									<li>BLOG</li>
+								</ul>
+							</div>
+						</li>
+						<li class="hoverMore">MORE<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--more">
+								<ul>
+									<li>ROOMS & SUITES</li>
+									<li>STATUS</li>
+									<li>DINING & BAR</li>
+									<li>BLOG</li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</div>
 				<div class="name__bookRooms">
-					<button >BOOK A ROOMS</button>
+					<button>BOOK A ROOMS</button>
 				</div>
 			</div>
 			<div class="menu__hidden">
 				<div class="name__menu">
 					<ul>
-						<li>HOME<i class="fa fa-angle-down menu__icon"></i></li>
-						<li class="page">ROOMS & SUITES</li>
-						<li>DINING & BAR</li>
-						<li>AMENITIES</li>
-						<li>BLOG<i class="fa fa-angle-down menu__icon"></i></li>
-						<li>MORE<i class="fa fa-angle-down menu__icon"></i></li>
+						<li class="hoverHomeHidden">HOME<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--homeHidden">
+								<ul>
+									<li>item1</li>
+									<li>item2</li>
+									<li>item3</li>
+									<li>item4</li>
+								</ul>
+							</div>
+						</li>
+						<!-- <li>ROOMS & SUITES</li> -->
+						<li class="page">DINING & BAR</li>
+						<!-- <li>AMENITIES</li> -->
+						<li class="hoverBlogHidden">BLOG<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--blogHidden">
+								<ul>
+									<li>item1</li>
+									<li>item2</li>
+									<li>item3</li>
+									<li>item4</li>
+								</ul>
+							</div>
+						</li>
+						<li class="hoverMoreHidden">MORE<i class="fa fa-angle-down menu__icon"></i>
+							<div class="sub__menu--moreHidden">
+								<ul>
+									<li>AMENITIES</li>
+									<li>ROOMS & SUITES</li>
+									<li>item3</li>
+									<li>item4</li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
+			<!-- menu screen mobile -->
+			<div class="menu">
+				<div class="option"><i class="fa fa-bars"></i></div>
+				<div class="option1">
+					<a href="https://www.youtube.com/watch?v=KiTbJzQujdk">R&S</a>
+				</div>
+				<div class="option2">
+					<a href="https://www.youtube.com/watch?v=KiTbJzQujdk">HOME</a>
+				</div>
+				<div class="option3">
+					<a href="https://www.youtube.com/watch?v=KiTbJzQujdk">AMT</a>
+				</div>
+				<div class="option4">
+					<a href="https://www.youtube.com/watch?v=KiTbJzQujdk">BLOG</a>
+				</div>
+			</div>
+			<!--  -->
 		</div>
-
 		<div class="mark__page">
 			<a href="#">Home </a><span>| Rooma & Suites</span>
 		</div>
@@ -162,13 +232,16 @@
 						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1" class="d-block w-100" alt="...">
+									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1"
+										class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHYftg_NDoN0/v0/1200x800.jpg" class="d-block w-100" alt="...">
+									<img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHYftg_NDoN0/v0/1200x800.jpg"
+										class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1" class="d-block w-100" alt="...">
+									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1"
+										class="d-block w-100" alt="...">
 								</div>
 							</div>
 							<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -195,17 +268,20 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="carousel-item active">
-								<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1" class="d-block w-100" alt="...">
+								<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1"
+									class="d-block w-100" alt="...">
 								<div class="carousel-caption d-none d-md-block">
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="https://chupanhthucpham.com/wp-content/uploads/2017/01/le-fruit-stag.jpg" class="d-block w-100" alt="...">
+								<img src="https://chupanhthucpham.com/wp-content/uploads/2017/01/le-fruit-stag.jpg"
+									class="d-block w-100" alt="...">
 								<div class="carousel-caption d-none d-md-block">
 								</div>
 							</div>
 							<div class="carousel-item">
-								<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1" class="d-block w-100" alt="...">
+								<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1"
+									class="d-block w-100" alt="...">
 								<div class="carousel-caption d-none d-md-block">
 								</div>
 							</div>
@@ -270,13 +346,16 @@
 						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1" class="d-block w-100" alt="...">
+									<img src="https://i2.wp.com/thue-studio.com/wp-content/uploads/2017/12/hinh-banh-mi.jpg?ssl=1"
+										class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="https://chupanhthucpham.com/wp-content/uploads/2017/01/le-fruit-stag.jpg" class="d-block w-100" alt="...">
+									<img src="https://chupanhthucpham.com/wp-content/uploads/2017/01/le-fruit-stag.jpg"
+										class="d-block w-100" alt="...">
 								</div>
 								<div class="carousel-item">
-									<img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHYftg_NDoN0/v0/1200x800.jpg" class="d-block w-100" alt="...">
+									<img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iHYftg_NDoN0/v0/1200x800.jpg"
+										class="d-block w-100" alt="...">
 								</div>
 							</div>
 							<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

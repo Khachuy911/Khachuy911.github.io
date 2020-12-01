@@ -1,0 +1,47 @@
+.menu{
+	height:200px;
+	width:200px;
+	position: relative;
+	top:200px;
+	left:200px;
+}
+.option{
+	background-color: rgb(69, 92, 115);
+	height:50px;
+	width:50px;
+	position: absolute;
+	top:80px;
+	left:80px;
+	z-index: 1;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+.option1,.option2,.option3,.option4{
+	z-index: 0;
+	text-align: center;
+	line-height: 50px;
+	background-color: rgb(9, 49, 88);
+	height:50px;
+	width:50px;
+	color:white;
+	position: absolute;
+	top:80px;
+	left:80px;
+	transition:1s ease-in-out;
+}
+.option2,.option4{
+	transition:1s ease-in-out;
+}
+.menu:hover> .option1{
+	left:150px;
+}
+.menu:hover> .option2{
+	top:150px;
+}
+.menu:hover> .option3{
+	left:10px;
+}
+.menu:hover> .option4{
+	top:10px;
+}

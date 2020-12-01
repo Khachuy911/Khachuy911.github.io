@@ -7,10 +7,11 @@ body{
 }
 .wrapper{
 	width:100%;
+	overflow: hidden;
 }
 
-/* Header */
 
+/* ***HEADER*** */
 .header{
 	background-color: rgb(69, 92, 115);
 	width:100%;
@@ -31,7 +32,6 @@ body{
 	margin-right:5px;
 	font-size: medium;	
 }
-
 .name{
 	display: flex;
 	justify-content: space-around;
@@ -69,6 +69,9 @@ body{
 .menu__hidden .name__menu{
 	display: none;
 }
+.menu__hidden .name__menu ul li{
+	width:160px;
+}
 .name__bookRooms button{
 	outline:none;
 	background-color:rgb(69, 92, 115) ;
@@ -81,6 +84,107 @@ body{
  .name__bookRooms button:hover{
 	border:1px solid #51cba3;
 	background-color:#51cba3 ;
+}
+
+/* Menu secondary */
+.sub__menu--blog,.sub__menu--blogHidden,.sub__menu--moreHidden,.sub__menu--more,.sub__menu--home,.sub__menu--homeHidden{
+	display: none;
+	background-color: white;
+	height:200px;
+	width:160px;
+	text-align: center;
+	position: absolute;
+}
+.sub__menu--blog ul ,.sub__menu--blogHidden ul,.sub__menu--more ul,.sub__menu--moreHidden ul,.sub__menu--home ul,.sub__menu--homeHidden ul{
+	display: inline-table;
+	height:40px;
+	line-height: 40px;
+	margin:0px;
+}
+.sub__menu--blog ul li,.sub__menu--blogHidden ul li,.sub__menu--more ul li,.sub__menu--moreHidden ul li,.sub__menu--home ul li,.sub__menu--homeHidden ul li{
+	color:black;
+}
+.hoverBlog,.hoverBlogHidden,.hoverMore,.hoverMoreHidden,.hoverHome,.hoverHomeHidden{
+	position: relative;
+}
+.hoverBlog:hover >.sub__menu--blog{
+	display: block;
+}
+.hoverBlogHidden:hover>.sub__menu--blogHidden{
+	display: block;
+}
+.hoverMore:hover > .sub__menu--more{
+	display: block;
+}
+.hoverMoreHidden:hover > .sub__menu--moreHidden{
+	display: block;
+}
+.hoverHome:hover > .sub__menu--home{
+	display: block;
+}
+.hoverHomeHidden:hover > .sub__menu--homeHidden{
+	display: block;
+}
+
+/* screen mobile */
+.menu{
+	display: none;
+	height:200px;
+	width:200px;
+	position: relative;
+	top:-90px;
+	left:-10px;
+	z-index: 999;
+}
+.option{
+	background-color:rgb(69, 92, 115);
+	border:1px transparent #51cba3;
+	height:50px;
+	width:50px;
+	position: absolute;
+	top:80px;
+	left:80px;
+	z-index: 1;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	color:white;
+	border-radius: 5px;
+}
+.option1,.option2,.option3,.option4{
+	z-index: 0;
+	text-align: center;
+	line-height: 50px;
+	background-color:  rgb(247, 240, 240);
+	height:50px;
+	width:50px;
+	color:black;
+	position: absolute;
+	top:80px;
+	left:80px;
+	transition:1s ease-in-out;
+	border-radius: 8px;;
+	cursor: pointer;
+}
+.menu a{
+	text-decoration: none;
+	color:black;
+}
+.menu a:hover{
+	color:red;
+	text-decoration: none;
+}
+.menu:hover> .option1{
+	left:135px;
+}
+.menu:hover> .option2{
+	top:140px;
+}
+.menu:hover> .option3{
+	left:25px;
+}
+.menu:hover> .option4{
+	top:25px;
 }
 
 /* mark__page */
@@ -100,6 +204,7 @@ body{
 .mark__page span{
 	color:#51cba3;
 }
+
 /* background main */
 .background__main{
 	background-image: url(dining-1-1.jpg);
@@ -132,8 +237,8 @@ body{
 	color:white;
 }
 
-/* section */
 
+/* ***SECTION*** */
 section{
 	width:100%;
 }
@@ -141,17 +246,29 @@ section{
 	text-align: center;
 	margin-bottom: 50px;
 }
+
+/* MENU FOOT */
 .main__menufood{
 	width:90%;
 	margin:0 auto;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.main__menufood-reverse{
+	width:90%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row-reverse;
 	margin-bottom: 100px;
 }
 .main__menufood--text,.main__menufood--img{
-	width:100%;
+	width:48%;
 }
-/*  */
-.main__menufood--text-priceName{   /*res*/
+.main__menufood--text-priceName{   
 	width:90%;
 }
 .price--name{
@@ -170,15 +287,12 @@ section{
 	margin-bottom: 70px;
 }
 
-.main__menufood--img{
-	border:1px solid rgb(228, 222, 222);
-}
 .main__menufood--img img{
 	padding:13px;
 	width:97%;
 }
-/*  */
 
+/* DESSERTS*/
 .Desserts{
 	width:100%;
 	background-color: rgb(248, 248, 248);
@@ -192,18 +306,12 @@ section{
 .Desserts__layout{
 	display: flex;
 	justify-content: space-evenly;
-	
 }
-.Desserts__layout--food{  /* res */
+.Desserts__layout--food{  
 	width:27%;
 }
-.Desserts__layout--food-img{
-	border:1px solid white;
-	background-color: white;
-}
 .Desserts__layout--food-img img{
-	width:100%;
-	padding:20px;
+	width:96%;
 }
 .Desserts__layout--food-text h3:hover{
 	color:#51cba3;
@@ -216,24 +324,8 @@ section{
 .Desserts__layout--food-text p{
 	color:silver;
 }
-/*  */
-.main__menufood--reverse{
-	width:90%;
-	display: flex;
-	margin:0 auto;
-	flex-direction: row-reverse;
-	margin-bottom: 100px;
-}
 
-.main__menufood--text-priceNameReverse{
-	margin-left:50px;
-}
-.main__menufood--textReverse p{
-	color:silver;
-	margin-bottom: 40px;
-}
-
-/*  */
+/* DOWNLOAD */
 .download{
 	display: flex;
 	justify-content: center;
@@ -243,7 +335,6 @@ section{
 	text-align: center;
 	width:100%;
 }
-
 .download button{
 	background-color:white ;
 	border:1px solid white;
@@ -260,7 +351,8 @@ section{
 	color:white;
 }
 
-/* footer */
+
+/* ***FOOTER*** */
 .footers{
 	width:100%;
 	height:700px;
@@ -274,7 +366,9 @@ section{
 	padding:50px;
 	color:white;
 }
-
+.footer__recent,.footer__contact{
+	margin-top:20px;
+}
 .footer__info,.footer__recent,.footer__contact{
 	width:33%;
 }
@@ -313,7 +407,7 @@ section{
 
 
 @media screen and (max-width:1100px) and (min-width:100px){
-	.main__menufood,.main__menufood--reverse{
+	.main__menufood,.main__menufood-reverse{
 		width:90%;
 		display: flex;
 		justify-content: center;
@@ -323,6 +417,9 @@ section{
 	.main__menufood--text-priceName, .main__menufood--text-priceNameReverse{ 
 		width:100%;
 		margin-left:0px;
+	}
+	.main__menufood--text,.main__menufood--img{
+		width:100%;
 	}
 	.main__menufood--img img, .main__menufood--imgReverse img{
 		width:98%;
@@ -334,7 +431,7 @@ section{
 	.Desserts__layout{
 		flex-direction: column;
 	}
-	.Desserts__layout--food{  /* res */
+	.Desserts__layout--food{  
 		width:90%;
 		margin:0 auto;
 	}
@@ -345,7 +442,7 @@ section{
 }
 
 
-/*  */
+
 @media screen and (max-width:1100px) and (min-width:700px){
 	.name__menu{
 		display: none;
@@ -396,6 +493,10 @@ section{
 		font-size: 20px;
 		color: white;
 	}
+	.menu{
+		display: block;
+	}
+
 	/*  */
 	.footers{
 		height:900px;
