@@ -7,11 +7,8 @@ body{
 }
 .wrapper{
 	width:100%;
-
 }
- 
 /* Header */
-
 .header{
 	background-color: rgb(69, 92, 115);
 	width:100%;
@@ -32,7 +29,6 @@ body{
 	margin-right:5px;
 	font-size: medium;	
 }
-
 .name{
 	display: flex;
 	justify-content: space-around;
@@ -47,11 +43,10 @@ body{
 }
 .menu__icon{
 	margin:3px;
-
 }
 .name__menu ul{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .name__menu ul li{
 	list-style: none;
@@ -83,7 +78,7 @@ body{
 	width:180px;
 	cursor: pointer;
 } 
- .name__bookRooms button:hover{
+.name__bookRooms button:hover{
 	outline: none;
 	background-color:#51cba3 ;
 }
@@ -105,24 +100,58 @@ body{
 }
 .hoverBlog,.hoverBlogHidden,.hoverMore,.hoverMoreHidden,.hoverHome,.sub__menu--moreHidden{
 	position: relative;
+	
+}
+@keyframes fadeOut {
+	0%{
+			top:80px;
+			opacity: 0.1;
+	}
+	100%{
+			top:25px ;
+	}
+}
+@keyframes fadeOutMoreHidden {
+	0%{
+			top:100px;
+			opacity: 0.1;
+	}
+	100%{
+			top:0px ;
+	}
+}
+@keyframes fadeOutHomeHidden {
+	0%{
+			top:350px;
+			opacity: 0.1;
+	}
+	100%{
+			top:225px ;
+	}
 }
 .hoverBlog:hover >.sub__menu--blog{
 	display: block;
+	animation: fadeOut 0.5s;
 }
 .hoverBlogHidden:hover>.sub__menu--blogHidden{
 	display: block;
+	animation: fadeOut 0.5s;
 }
 .hoverMore:hover > .sub__menu--more{
 	display: block;
+	animation: fadeOut 0.5s;
 }
 .hoverMoreHidden:hover > .sub__menu--moreHidden{
 	display: block;
+	animation: fadeOutMoreHidden 0.5s;
 }
 .hoverHome:hover > .sub__menu--home{
 	display: block;
+	animation: fadeOut 0.5s;
 }
 .hoverHomeHidden:hover > .sub__menu--homeHidden{
 	display: block;
+	animation: fadeOutHomeHidden 0.5s;
 }
 /* screen mobile */
 .menu{
@@ -184,13 +213,10 @@ body{
 .menu:hover> .option4{
 	top:22px;
 }
-/*  */
-
 /* mark__page */
 .mark__page{
 	height:50px;
-	line-height: 50px;
-	
+	line-height: 50px;	
 }
 .mark__page a{
 	text-decoration: none;
@@ -206,10 +232,12 @@ body{
 	z-index: 1;
 }
 /* background main */
-.background__main{
+.background__main {
 	background-image: url(https://ld-wp.template-help.com/wordpress_62442_v3/wp-content/uploads/2016/11/rooms-suites-1.jpg);
 	width:100%;
 	height:650px;
+}
+.background__main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -236,9 +264,7 @@ body{
 	font-size: 20px;
 	color:white;
 }
-
 /* section */
-
 .section__info{
 	display: flex;
 	margin:200px 0;
@@ -246,12 +272,16 @@ body{
 	margin:0 auto;
 	padding:100px 0;
 }
+.section__info--bgrcl .section__info{
+	display: flex;
+	flex-direction: row-reverse;
+} 
 .section__info--img{
 	width:50%;
 	border:1px solid silver;
 	height:100%;
 }
-#carouselExampleIndicators,#carouselExampleControls,#carouselExampleCaptions{
+#carouselExampleIndicators,#carouselExampleControls,#carouselExampleCaptions,#carouselExampleFade{
 	width:100%;
 	padding:10px;
 }
@@ -290,12 +320,10 @@ body{
 	color:white;
 	outline: none;
 }
-
 .section__info--bgrcl{
 	background-color: rgb(247, 240, 240);
 	margin:100px 0;
 }
-
 /* footers */
 .footers{
 	width:100%;
@@ -310,7 +338,6 @@ body{
 	padding:50px;
 	color:white;
 }
-
 .footer__recent,.footer__contact{
 	margin-top:20px;
 }
@@ -348,8 +375,6 @@ body{
 	color:#51cba3;
 	font-size: 30px;
 }
-
-
 @media screen and (max-width:1100px) and (min-width:700px){
 	.name__menu{
 		display: none;
@@ -373,8 +398,7 @@ body{
 		width:100%;
 	}
 	.section__info--bgrcl .section__info{
-		display:flex;
-		flex-direction: column-reverse;
+		display:block;
 	}
 	/*  */
 	.footer{
@@ -391,7 +415,6 @@ body{
 		padding:10px;
 	}
 } 
-
 @media screen and (max-width:699px) and (min-width:100px){
 	.header{
 		text-align: center;
@@ -419,11 +442,8 @@ body{
 		display: block;
 	}
 	/*  */
-	
-
 	.background__main {
 		height:1000px;
-
 	}
 	.background__main p{
 		width:90%;
@@ -432,18 +452,17 @@ body{
 	.background__main h2{
 		font-size: 16px;
 	}
-	.section__info{
+	.section__info,.section__info--bgrcl .section__info{
 		display: block;
 	}
-	.section__info--text{
+	.section__info--text,.section__info--bgrcl .section__info--text{
 		width:100%;
 		margin:10px;
 		padding:10px 0px;
 	}
-	.section__info--img{
+	.section__info--img,.section__info--bgrcl .section__info--img{
 		width:100%;
 	}
-
 	/*  */
 	.footers{
 		height:1100px;
@@ -463,9 +482,3 @@ body{
 		padding:0px;
 	}
 }
-
-
-
-
-
-/* order  */

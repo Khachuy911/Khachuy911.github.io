@@ -106,6 +106,57 @@ body{
 .hoverBlog,.hoverBlogHidden,.hoverMore,.hoverMoreHidden,.hoverHome,.sub__menu--moreHidden{
 	position: relative;
 }
+@keyframes fadeOut {
+	0%{
+			top:80px;
+			opacity: 0.1;
+	}
+	100%{
+			top:25px ;
+	}
+}
+@keyframes fadeOutMoreHidden {
+	0%{
+			top:100px;
+			opacity: 0.1;
+	}
+	100%{
+			top:0px ;
+	}
+}
+@keyframes fadeOutHomeHidden {
+	0%{
+			top:350px;
+			opacity: 0.1;
+	}
+	100%{
+			top:225px ;
+	}
+}
+.hoverBlog:hover >.sub__menu--blog{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverBlogHidden:hover>.sub__menu--blogHidden{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverMore:hover > .sub__menu--more{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverMoreHidden:hover > .sub__menu--moreHidden{
+	display: block;
+	animation: fadeOutMoreHidden 0.5s;
+}
+.hoverHome:hover > .sub__menu--home{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverHomeHidden:hover > .sub__menu--homeHidden{
+	display: block;
+	animation: fadeOutHomeHidden 0.5s;
+}
 .hoverBlog:hover >.sub__menu--blog{
 	display: block;
 }
@@ -248,10 +299,17 @@ body{
 .section__main--img{
 	width:45%;
 	border:1px solid silver;
+	overflow: hidden;
 }
+
 .section__main--img img{
 	width:100%;
 	padding:10px;
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.section__main--img:hover img{
+	transform: scale(1.2);
 }
 .section__main--text{
 	width:40%;
