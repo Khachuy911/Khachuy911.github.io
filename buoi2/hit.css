@@ -1,0 +1,38 @@
+*{
+	padding:0;
+	margin:0;
+}
+.nav{
+	display: flex;
+	flex-direction: column;
+	background-color: orange;
+	width:200px;
+	text-align: center;
+}
+.item{
+	padding:8px 16px;
+	color:white;
+	position: relative;
+}
+.item:hover{
+	color: tomato;
+	background-color: turquoise;
+}
+.item__sub:hover{
+	color: tomato;
+	background-color: turquoise;
+}
+.container{
+	position: absolute;
+	top:0;
+	left:100%;
+	background-color: orange;
+	display: none;
+}
+.item__sub{
+	padding:8px 16px;
+	width:200px;
+}
+.item:hover .container{
+	display: block;
+}

@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+.menu{
+	width:100%;
+}
+.menu ul{
+	display: flex;
+	height:40px;
+	background-color: #00A69B;
+}
+a{
+	text-decoration: none;
+	font-size: 16px;
+	color:#000666;
+}
+.menu ul li{
+	list-style: none;
+	width:100%;
+	line-height: 40px;
+	text-align: center;
+}
+.menu ul li:hover{
+	background-color:#66FFFF;
+}
+.sub__menu{
+	display: none;
+	position: relative;
+	z-index: 99;
+}
+.sub__menu ul{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFCCFF;
+	height:100%;
+}
+.menu ul li:hover >.sub__menu{
+	background-color:#66FFFF;
+	display: block;
+}
+/*  */
+.section{
+	display: flex;
+	height:700px;
+}
+.layout1{
+	flex-basis: 80%;
+	display: flex;
+}
+.layout1a{
+	flex-basis: 35%;
+}
+.layout1a h2{
+	margin:20px 0;
+}
+.layout1a img{
+	width:100%;
+	height:500px;;
+}
+.layout1b{
+	flex-basis: 40%;
+	margin:100px 20px;
+}
+.layout1b .sanpham{
+	display: flex;
+	margin-bottom:70px;
+}
+.layout1b .anh img{
+	width:50px;
+	height:50px;
+	margin:0px 5px;
+}
+.layout1c{
+	flex-basis: 30%;
+}
+.layout1c h2{
+	margin:20px 0;
+}
+.box{
+	border:2px solid black;
+	background-color: black;
+	color:white;
+	text-align: center;
+}
+hr{
+	margin:10px;
+}
+
+.layout2{
+	flex-basis:22%;
+	margin-left:50px;
+}
+.box1{
+	border:3px solid black;
+	background-color: black;
+	text-align: center;
+	color:white;
+}
+.box1 p{
+	background-color: white;
+	color: black;
+	margin:0 10px;
+}
+/*  */
+.footer{
+	display: flex;
+	justify-content: space-around;
+	background-color: blue;
+	height:40px;
+	line-height: 40px;
+	color: white;
+}

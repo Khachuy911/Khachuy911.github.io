@@ -1,0 +1,210 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color: blueviolet;
+		}
+		.container{
+			height:700px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		form{
+			width:200px;
+			background-color: cornsilk;
+		}
+		h2{
+			text-align: center;
+			background-color: darksalmon;
+			color:white;
+		}
+		label{
+			padding:10px;
+		}
+		input{
+			margin:0 auto;
+			display: block;
+		}
+		small{
+			padding:20px;
+			color:crimson;
+		}
+		#send{
+			border: 1px solid darksalmon;
+			background-color: darksalmon;
+			width:100%;
+			color:white;
+			padding:10px;
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<h2>Bảo nguyên</h2>
+			<label for="name">Nhập tên</label>
+			<input type="text" id="name">
+			<small id="errorName"></small>
+			<br>
+			<label for="phone">Nhập Sđt</label>
+			<input type="text" id="phone">
+			<small id="errorPhone"></small>
+			<br>
+			<input id="send" type="button" value="Gửi" onclick="check()">
+		</form>
+	</div>
+
+
+	<script>
+		function check(){
+			var namea = document.getElementById('name').value;
+			var phonea = document.getElementById('phone').value;
+			var number=/[0-9]/;
+			var text =/[a-z A-z]/;
+			if(namea =="" || phonea==""){
+				document.getElementById('errorPhone').innerHTML="khắc tùng";
+				document.getElementById('errorName').innerHTML="khắc tùng";
+			}else{
+			if(text.test(phonea)==true){
+				document.getElementById('errorPhone').innerHTML="SĐT không được có chữ";
+			}else 
+				document.getElementById('errorPhone').innerHTML="SĐT true";
+
+			if(number.test(namea)==true){
+				document.getElementById('errorName').innerHTML="Tên không được có số";
+			}else
+				document.getElementById('errorName').innerHTML="Tên true";
+		}
+		}
+	</script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		Aa@123456789
+		<div id="form">
+			<label>Name</label>
+			<br>
+			<input type="text" id="inputName"><span id="errorN"></span>
+			<br>
+			<label>Pass</label>
+			<br>
+			<input type="text" id="inputPass"><span id="errorP"></span>
+			<br>
+			<label>Repeat Pass</label>
+			<br>
+			<input type="text" id="checkPass"><span id="errorC"></span>
+			<br><button onclick="send()">send</button>
+		</div>
+	</div>
+
+<script>
+
+
+
+
+	function check(pass){
+		// var lengthPass = /^[\S\s]{8,}$/
+		// 		number = /[0-9]/ ,
+		// 		upper = /[A-Z]/,
+		// 		lowper = /[a-z]/,
+		// 		special = /[   !"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~  ]/;
+
+				var lengthPass = /^[\S\s]{8,}$/,
+				text = /[\w]/,
+				special = /[!@#$%^&*~`;',./<>?:"'()[\\\]|]/;
+
+	if(lengthPass.test(pass)&&
+	
+		 special.test(pass)&&
+	
+			text.test(pass)
+		 ){
+		return true;
+	}
+		return false;
+	}
+
+	function send(){
+		var inputName = document.getElementById('inputName').value;
+		var inputPass = document.getElementById('inputPass').value;
+		var checkPass = document.getElementById('checkPass').value;
+		var number = /[0-9]/;
+		if(check(inputPass) == false){
+			document.getElementById('errorP').innerHTML = "Pass khong phu hop";
+		}else 
+			document.getElementById('errorP').innerHTML = "ok";
+
+	
+		if(number.test(inputName) == true){
+			document.getElementById('errorN').innerHTML ="Name khong chua so ";
+		}else
+			document.getElementById('errorN').innerHTML ="Ok";
+	
+		if(checkPass != inputPass){
+			document.getElementById('errorC').innerHTML = "khong trung  voi pass";
+		}else
+			document.getElementById('errorC').innerHTML = "ok ";
+	}
+</script>
+</body>
+</html>

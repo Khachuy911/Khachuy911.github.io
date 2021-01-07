@@ -11,6 +11,12 @@ const listPersons = [
   { name: "Lê Văn Hà", age: 55, gender: "nam" },
 ]
 
+let person ={
+	nguoiGia =0,
+	nguoiTre = 0,
+	nguoiTN = 0
+}
+
 function filterByGender(listPersons,gender){
 	for(var i=0;i<listPersons.length;i++){
 		if(listPersons[i].gender == gender){

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<label for="number">Nhập số dương</label>
+		<input type="text" id="number"><span id="error"></span>
+		<input type="button" onclick="check()"value="run">
+	</form>
+
+
+	<script>
+		function demo(a){
+			var length = /[\S\s]{8,}/,
+					kitu = /[\W]/,
+					text = /[\w]/;
+
+
+			if(length.test(a) && kitu.test(a) && text.test(a)){
+				return true;
+			}
+			return false;
+		}
+
+
+		function check(){
+			var numbera = document.getElementById('number').value;
+			var number =/[0-9]/;
+			if(demo(numbera)){
+				document.getElementById('error').innerHTML = "true";
+			}else
+				document.getElementById('error').innerHTML = "Nhập số dương";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		input{
+			display: block;
+		}
+		small{
+			display: block;
+			color: crimson;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="name">Name</label>
+		<input type="text" id="name">
+		<small id="errorN"></small>
+		<label for="pass">Pass</label>
+		<input type="text" id="pass">
+		<small id="errorP"></small>
+		<label for="checkPass">Reapet Pass</label>
+		<input type="text" id="checkPass">
+		<small id="errorCP"></small>		
+		<input type="button" value ="send" onclick="check()">
+	</form>
+
+
+	<script>
+		function demoa(a){
+			var length = /^[\S\s]{8,}$/,
+					number = /[0-9]/,
+					lowper = /[A-Z]/,
+					upper = /[a-z]/,
+					special = /[`~!@#$%^&*()-+=[\\\]:"<>?';,.|]/;
+
+					if(length.test(a)&&
+						number.test(a)&&
+						lowper.test(a)&&
+						upper.test(a)&&
+						special.test(a)){
+						return true;
+					}
+					return false;
+		}
+		
+
+		function check(){
+			var nameN = document.getElementById('name').value;
+			var passP = document.getElementById('pass').value;
+			var checkP = document.getElementById('checkPass').value;
+			var number = /[0-9]/;
+			if(number.test(nameN)){
+				document.getElementById('errorN').innerHTML="false";
+			}else {
+				document.getElementById('errorN').innerHTML="true";
+			}
+
+			if(demoa(passP)){
+				document.getElementById('errorP').innerHTML="true";
+			}else{
+				document.getElementById('errorP').innerHTML="false";
+			}
+
+			if(passP !== checkP){
+				document.getElementById('errorCP').innerHTML="không trùng";
+			}else {
+				document.getElementById('errorCP').innerHTML="true";
+			}
+		}
+
+
+
+	</script>
+</body>
+</html> -->

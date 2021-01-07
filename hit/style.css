@@ -1,0 +1,107 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 500px){
+	.container{
+		flex-direction: column;
+	}
+} */
+
+/* all thì dùng cho tca thiết bị */
+
+/* .container{
+	display: flex;
+	flex-direction: row;
+	height:1000px;
+}
+.box1{
+	flex-basis: 30%;
+	background-color: cornflowerblue;
+}
+.box2{
+	flex-basis: 70%;
+	background-color: darkorange;
+}
+.box__menu{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+.box__menu--sub{
+	height:200px;
+}
+.box__menu--sub ul{
+
+	list-style: none;
+}
+.box__menu--sub ul li{
+	height:50px;
+	line-height: 50px;
+}
+.box__menu--sub1{
+	background-color: darkorchid;
+	height:800px;
+}
+
+@media screen and (max-width:400px){
+	.container{
+		flex-direction: column;
+	}
+	.box__menu--sub{
+		flex-basis: 80%;
+	}
+	.box__menu--sub1{
+		flex-basis: 20%;
+	}
+	.box__menu{
+		height:50px
+	}
+}
+@media screen and (min-width:400px) and(max-width:700px){
+	.container{
+		flex-direction: column;
+	}
+	.box__menu--sub{
+		flex-basis: 80%;
+	}
+	.box__menu--sub1{
+		flex-basis: 20%;
+	}
+} */

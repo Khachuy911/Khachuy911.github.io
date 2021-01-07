@@ -28,10 +28,9 @@ function convertVip(listAccounts){
 function khuyenMai(listAccounts,id,balance){
 	for(var i=0;i<listAccounts.length;i++){
 		if(listAccounts[i].balance =="0" && listAccounts[i].id==id){
-			listAccounts[i].balance = balance*2;
+			listAccounts[i].balance = balance*3;
 			console.log(listAccounts[i]);
 		}
-		
 	}
 }
 

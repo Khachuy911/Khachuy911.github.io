@@ -1,0 +1,1 @@
+const API = "http://api.openweathermap.org/data/2.5/weather?q=hanoi&appid=1f7677891006fed0f7f27becc49ea77b";

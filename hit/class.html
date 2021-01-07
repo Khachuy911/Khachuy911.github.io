@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	label{
+		width: 150px;
+		float:left;
+	}
+	input{
+		margin-bottom: 5px;
+	}
+</style>
+
+<script>
+function getInfo(){
+	var hovaten=document.getElementById("hovaten").value;
+	var number=/[0-9]/;
+	var matkhau=document.getElementById("matkhau").value;
+	var xacnhanmatkhau=document.getElementById("xacnhanmatkhau").value;
+	if(validate(matkhau)==false){
+		document.getElementById("errormatkhau").innerHTML="Nhap mat khau chua hop le.";
+	}else{
+		document.getElementById("errormatkhau").innerHTML="OK";
+	}
+	if(number.test(hovaten)==true){
+		document.getElementById("errorhovaten").innerHTML="Ho ten khong duoc co so!";
+	}else{
+		document.getElementById("errorhovaten").innerHTML="OK";
+	}
+	if(matkhau!=xacnhanmatkhau){
+		document.getElementById("errorxacnhanmatkhau").innerHTML="Mat khau xac nhan phai trung";
+	}else{
+		document.getElementById("errorxacnhanmatkhau").innerHTML="OK";
+	}
+
+}
+
+
+function validate(password) {
+    var minMaxLength = /^[\S\s]{8,}$/,
+        upper = /[A-Z]/,
+        lower = /[a-z]/,
+        number = /[0-9]/,
+        special = /[   !"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~  ]/;
+
+    if (minMaxLength.test(password) &&
+        upper.test(password) &&
+        lower.test(password) &&
+        number.test(password) &&
+        special.test(password)
+    ) {
+        return true;
+    }
+
+    return false;
+}
+
+</script>
+
+<body>
+	<form action="">
+		<label for="">Ho va Ten</label>
+		<input type="text" value="" id="hovaten">
+		<span id="errorhovaten"></span>
+		<br>
+		<label for="">Mat khau</label>
+		<input type="text" value="" id="matkhau">
+		<span id="errormatkhau"></span>
+		<br>
+		<label for="">Xac nhan mat khau</label>
+		<input type="text" value="" id="xacnhanmatkhau">
+		<span id="errorxacnhanmatkhau"></span>
+		<br>
+		<input type="button" value="submmit" onclick="getInfo(); return false;">
+	</form>
+</body>
+</html>

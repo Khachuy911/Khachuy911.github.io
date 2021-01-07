@@ -1,0 +1,164 @@
+*{
+	margin:0;
+	padding:0;
+}
+.wrapper{
+	height:100%;
+	width:100%;
+}
+.header{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	height:60px;
+}
+/*  */
+.logo{
+	width:20%;
+}
+.logo img{
+	width:100%;
+	height:100%;
+}
+/*  */
+.menu{
+	margin:0 20px;
+	width:15%;
+	position:relative;
+	cursor: pointer;
+}
+.menu img{
+	width:40%;
+	height:100%;
+	float:left;
+}
+.menu span{
+	line-height: 60px;
+}
+.sub__menu{
+	display: none;
+	position:absolute;
+	top:60px;
+	width:100%;
+	background-color: rgb(236, 229, 229);
+	z-index: 99;
+}
+.sub__menu ul li{
+	list-style: none;
+	padding:5px;
+	cursor: pointer;
+}
+.menu:hover >.sub__menu{
+	display: block;
+}
+
+
+/*  */
+.search{
+	width:40%;
+}
+select{
+	width:15%;
+	height:100%;
+}
+input{
+	height:94%;
+	width:60%;
+}
+button{
+	height:100%;
+	width:15%;
+}
+/*  */
+.account{
+	width:15%;
+}
+.account img{
+	width:25%;
+	height:100%;
+	float:left;
+}
+.account span{
+	line-height: 60px;
+}
+.repo{
+	width:10%;
+}
+.repo img{
+	margin-left: 20px;
+	width:40%;
+	height:100%;
+}
+
+/*  */
+/*  */
+.section{
+	height:650px;
+}
+hr{
+	margin-top:20px;
+}
+.markpage{
+	margin:20px 10px;
+}
+.layout{
+	height:400px;
+	display:flex;
+}
+.tli{
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+}
+.optionpro select{
+	width:150px;
+	height: 40px;
+}
+.menu__main{
+	width:20%;
+	height:100%;
+}
+.menu__main ul li{
+	margin:0 30px;
+	list-style: none;
+	height:50px;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.product{
+	height:100%;
+	display: flex;
+}
+.product__buy{
+	flex-basis: 24%;
+	height:100%;
+	margin:5px;
+}
+.product__buy img{
+	margin-bottom: 30px;
+}
+small{
+	margin:0 10px;
+}
+.product__buy img{
+	width:100%;
+	height:100%;
+}
+/*  */
+/*  */
+
+.footer{
+	background-color: cadetblue;
+	height:50px;
+}
+.footer input{
+	width:200px;
+
+}
+.footer button{
+	width:50px;
+
+}

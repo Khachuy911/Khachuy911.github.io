@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button value="1" onclick="add(this.value)">1</button>
+	<button value="2" onclick="add(this.value)">2</button>
+	<button value="3" onclick="add(this.value)">3</button>
+	<input type="text" id="xuat" value="">
+
+	<script>
+		function add(x){
+			var hien1 = document.getElementById('xuat');
+			hien1.value += x; 
+		}
+	</script>
+
+
+
+	<!-- <label for="inputOne">Nhập số </label>
+	<input type="text" id="inputOne">
+	<label for="inputTwo">Nhập số </label>
+	<input type="text" id="inputTwo">
+	<label for="result">Result </label>
+	<input type="text" id="kq" value="">
+	<button onclick="run()">Run</button>
+
+
+	<script>
+		function run(){
+			var a = document.getElementById('inputOne').value;
+			var b = document.getElementById('inputTwo').value;
+			var kq = document.getElementById('kq');
+			console.log("a=" + a);
+			console.log("b=" + b);
+			kq.value= parseInt(a) + parseInt(b);
+		}
+	</script> -->
+</body>
+</html>

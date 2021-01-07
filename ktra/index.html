@@ -1,126 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Happy women's Day</title>
 </head>
+
 <body>
-	<div class="wrapper">
-		<div class="header">
-			<div class="image">
-				<img src="logo-HIT.png" alt="err">
-			</div>
-			<div class="menu">
-				<ul>
-					<li>Metiers</li>
-					<li>Expertises</li>
-					<li>Qui Sommes-Nous</li>
-					<li>Poster Une Mission</li>
-				</ul>
-			</div>
-			<div class="buton">
-				<li>Se Connecter</li><button>S'incrire</button>
-			</div>
-		</div>
-		
-
-		<div class="section">
-			<div class="section__one">
-				<div class="section__text">
-					<h1>Lorem, ipsum dolor.</h1>
-					<p>Lorem ipsum dolor sit amet, 
-						consectetur adipisicing elit. Rerum non dolore 
-						nesciunt itaque animi accusamus quas?</p>
-					<div class="section__text--icon">
-						<p><i class="fab fa-monero icon"></i>Deserunt ad consectetur necessitatibus. Ex vel nostrum magnam libero?</p>
-						<p><i class="fab fa-monero icon"></i>Consectetur adipisicing elit, Facere, modi?</p>
-						<p><i class="fab fa-monero icon"></i>Officiis facere dolores id. Veniam, voluptatum ad. Beatae numquam quam sequi quae sit?</p>
-						<div class="section__text--button">
-							<div class="buta"><button>Je profite des offres</button></div>
-							<div class="butb"><button>En Savoir Plus</button></div>
-						</div>
-					</div>
-				</div>
-				<div class="section__image">
-					<img src="two-male.png" alt="err">
-				</div>
-			</div>
-			<div class="section__two">
-				<h1>Lorem, ipsum dolor.</h1>
-				<div class="section__two--text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum tempora quis accusantium, natus nulla exercitationem ab dolore dolores veniam quaerat.</p>
-					<div class="section__two--button1">
-						<div class="but"><button>tous</button></div>
-						<div class="but"><button>tous</button></div>
-						<div class="but"><button>tous</button></div>
-						<div class="but"><button>tous</button></div>
-						
-					</div>
-					<div class="section__two--button2">
-						<div class="but"><button>tous</button></div>
-						<div class="but"><button>tous</button></div>
-						<div class="but"><button>tous</button></div>
-					</div>
-				</div>
-			</div>
-			</div>
-
-			<div class="section__three">
-				<div class="section__three--text">
-					<div class="section__three--img"><img src="Partner logo - 3-1.png" alt="error"></div>
-					<h1>Formez-vous</h1>
-					<h1>	Comme Un Pro</h1>
-					<p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même.</p>
-				</div>
-				<div class="section__three--image">
-					<img src="7.png" alt="err">
-				</div>
-			</div>
-
-
-				<div class="kokoon">
-					<div class="kokoon__one">
-						<img src="Partner logo - 5.png" alt="err">
-						<hr>
-						<div class="kokoon__text">
-							<h1>Kokoon</h1>
-							<p>Confiez votre recherche de logement à un expert</p>
-							<i class="fa fa-plus-circle item"></i>
-						</div>
-					</div>
-					<div class="kokoon__one">
-						<img src="Partner logo - 5.png" alt="err">
-						<hr>
-						<div class="kokoon__text">
-							<h1>Kokoon</h1>
-							<p>Confiez votre recherche de logement à un expert</p>
-							<i class="fa fa-plus-circle item"></i>
-						</div>
-					</div>
-					<div class="kokoon__one">
-						<img src="Partner logo - 5.png" alt="err">
-						<hr>
-						<div class="kokoon__text">
-							<h1>Kokoon</h1>
-							<p>Confiez votre recherche de logement à un expert</p>
-							<i class="fa fa-plus-circle item"></i>
-						</div>
-					</div>
-				</div>
-		</div>
-		<div class="footer">
-			<div class="nxb">
-				<p>© 2014-2020 LeHibou - SAS au capital de 51 750€</p>
-			</div>
-			<div class="app">
-				<i class="fab fa-facebook appli"></i><i class="fab fa-linkedin-in appli"></i><i class="fab fa-twitter-square appli"></i>
-			</div>
-		</div>
-	</div>
-	
-
+    <div class="form">
+        <h2>Đăng Nhập Tại Đây nè</h2>
+        <div class="box">
+            <input class="input-name" type="text" placeholder="Nhập Họ tên Nam đây nhe.">
+        </div>
+        <div class="box">
+            <input class="input-age" type="text" placeholder="Nhập họ tên Nữ vào đây nè!">
+        </div>
+        
+        <button class= "btn" onclick="changeWebsite()">Đăng Nhập</button>
+         
+    </div>
+    <script>
+         function changeWebsite(){
+             var valueInput1 = document.querySelector('.input-name').value;
+             var value1 = valueInput1.toUpperCase();
+             var valueInput2 = document.querySelector('.input-age').value;
+             var value2 = valueInput2.toUpperCase();
+             var addElement = document.querySelector('body');
+             var afterAdd = addElement.innerHTML = "<div><h1> Tớ  " + value1 + " YÊU "+ value2 + "  nhất trên đời! </h1></div>";
+             document.write(afterAdd);
+             var addOut = document.querySelector('div');
+             Object.assign(addOut.style, {
+                 borderStyle:'solid',
+                 borderColor:'red',
+                 borderRadius:'5px',
+                 color:'red',
+                 backgroundColor :'#FCC974',
+             })
+             var textStyle = document.querySelector('h1');
+             Object.assign(textStyle.style,{
+                 textAlign:'center',
+             })
+             var addLink = addElement.innerHTML = '<div><button><a href="https://duonghungit24.github.io/happywomen/index.html">Nhấn vào đây tiếp nè</a></button></div>';
+             document.write(addLink);
+             var buttonStyle = document.querySelector('button');
+             Object.assign(buttonStyle.style,{
+                 display:'block',
+                 margin:'10px auto',
+                 backgroundColor:'#fcc947',
+                 padding:'5px',
+                 borderRadius:'5px',
+                 borderColor:'red',
+                 borderStyle:'solid',
+             })
+             var linkStyle = document.querySelector('a');
+             Object.assign(linkStyle.style,{
+                 color:'red',
+                 textDecoration:'none',
+             })
+            var addImage = addElement.innerHTML = '<img src="https://media4.giphy.com/media/Y3HTF8WdRpEFIu3FA8/source.gif" width=100% alt="ảnh chuyển động"> '
+            document.write(addImage);
+         }
+    </script>
 </body>
+
 </html>
