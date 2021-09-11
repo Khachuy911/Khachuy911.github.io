@@ -1,0 +1,490 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: serif;
+}
+.wrapper{
+	width:100%;
+}
+
+/* Header */
+.header{
+	background-color: rgb(69, 92, 115);
+	width:100%;
+	height:250px;
+}
+.address{
+	display: flex;
+	justify-content: center;
+	height:70px;
+}
+.address__home, .address__phone{
+	padding:30px;
+	color:rgb(233, 221, 221);
+	font-size: small;
+}
+.name__icon{
+	color:rgb(142, 142, 238);
+	margin-right:5px;
+	font-size: medium;	
+}
+.name{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height:130px;
+}
+.name__hotel{
+	cursor: pointer;
+}
+.name__menu{
+	width:50%;
+}
+.menu__icon{
+	margin:3px;
+}
+.name__menu ul{
+	display: flex;
+	justify-content: space-between;
+}
+.name__menu ul li{
+	list-style: none;
+	color: white;
+	cursor: pointer;
+}
+
+.name__menu ul li a{
+	color: white;
+}
+.name__menu ul li a:hover{
+	text-decoration: none;
+	color:#51cba3;
+}
+.name__menu ul .page a{
+	color:#51cba3 ;
+}
+.menu__hidden {
+	display: flex;
+	width:100%;
+	justify-content: center;
+}
+.menu__hidden .name__menu{
+	display: none;
+}
+.menu__hidden .name__menu ul li{
+	width:160px;
+}
+.name__bookRooms button{
+	background-color:rgb(69, 92, 115);
+	border:1px solid #51cba3;
+	color:white;
+	padding:12px;
+	width:180px;
+	cursor: pointer;
+} 
+.name__bookRooms button:hover{
+	outline: none;
+	background-color:#51cba3 ;
+}
+.sub__menu--blog,.sub__menu--blogHidden,.sub__menu--moreHidden,.sub__menu--more,.sub__menu--home,.sub__menu--homeHidden{
+	display: none;
+	background-color:#faf5f5 ;
+	height:200px;
+	width:160px;
+	text-align: center;
+	position: absolute;
+}
+.sub__menu--blog ul ,.sub__menu--blogHidden ul,.sub__menu--more ul,.sub__menu--moreHidden ul,.sub__menu--home ul,.sub__menu--homeHidden ul{
+	display: inline-table;
+	height:40px;
+	line-height: 40px;
+}
+.sub__menu--blog ul li a,.sub__menu--blogHidden ul li a,.sub__menu--more ul li a,.sub__menu--moreHidden ul li a,.sub__menu--home ul li a,.sub__menu--homeHidden ul li a{
+	color:black;
+}
+.hoverBlog,.hoverBlogHidden,.hoverMore,.hoverMoreHidden,.hoverHome,.sub__menu--moreHidden{
+	position: relative;
+	
+}
+@keyframes fadeOut {
+	0%{
+			top:80px;
+			opacity: 0.1;
+	}
+	100%{
+			top:25px ;
+	}
+}
+@keyframes fadeOutMoreHidden {
+	0%{
+			top:100px;
+			opacity: 0.1;
+	}
+	100%{
+			top:0px ;
+	}
+}
+@keyframes fadeOutHomeHidden {
+	0%{
+			top:350px;
+			opacity: 0.1;
+	}
+	100%{
+			top:225px ;
+	}
+}
+.hoverBlog:hover >.sub__menu--blog{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverBlogHidden:hover>.sub__menu--blogHidden{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverMore:hover > .sub__menu--more{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverMoreHidden:hover > .sub__menu--moreHidden{
+	display: block;
+	animation: fadeOutMoreHidden 0.5s;
+}
+.hoverHome:hover > .sub__menu--home{
+	display: block;
+	animation: fadeOut 0.5s;
+}
+.hoverHomeHidden:hover > .sub__menu--homeHidden{
+	display: block;
+	animation: fadeOutHomeHidden 0.5s;
+}
+/* screen mobile */
+.menu{
+	display: none;
+	height:200px;
+	width:200px;
+	position: relative;
+	top:-90px;
+	left:-10px;
+	z-index: 999;
+}
+.option{
+	background-color:rgb(69, 92, 115);
+	border:1px transparent #51cba3;
+	height:50px;
+	width:50px;
+	position: absolute;
+	top:80px;
+	left:80px;
+	z-index: 1;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	color:white;
+	border-radius: 5px;
+}
+.option1,.option2,.option3,.option4{
+	z-index: 0;
+	text-align: center;
+	line-height: 50px;
+	background-color:  rgb(247, 240, 240);
+	height:50px;
+	width:50px;
+	color:black;
+	position: absolute;
+	top:80px;
+	left:80px;
+	transition:1s ease-in-out;
+	border-radius: 8px;;
+	cursor: pointer;
+}
+.menu a{
+	text-decoration: none;
+	color:black;
+}
+.menu a:hover{
+	color:red;
+	text-decoration: none;
+}
+.menu:hover> .option1{
+	left:135px;
+}
+.menu:hover> .option2{
+	top:140px;
+}
+.menu:hover> .option3{
+	left:25px;
+}
+.menu:hover> .option4{
+	top:22px;
+}
+/* mark__page */
+.mark__page{
+	height:50px;
+	line-height: 50px;	
+}
+.mark__page a{
+	text-decoration: none;
+	margin-left:80px;
+	color:rgb(228, 222, 175);
+}
+.mark__page a:hover{
+	color:#51cba3;
+	text-decoration: none;
+}
+.mark__page span{
+	color:#51cba3;
+	z-index: 1;
+}
+/* background main */
+.background__main {
+	background-image: url(https://ld-wp.template-help.com/wordpress_62442_v3/wp-content/uploads/2016/11/rooms-suites-1.jpg);
+	width:100%;
+	height:650px;
+}
+.background__main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.background__main h1{
+	color:#51cba3;
+	padding: 10px;
+}
+.background__main h2{
+	font-size: 50px;
+	color: white;
+}
+.background__main hr{
+	width:50%;
+	border-top:1px solid #51cba3;
+	margin:50px 0;
+}
+.background__main p{
+	width:70%;
+	text-align: center;
+	padding:20px;
+	font-size: 20px;
+	color:white;
+}
+/* section */
+.section__info{
+	display: flex;
+	margin:200px 0;
+	width:90%;
+	margin:0 auto;
+	padding:100px 0;
+}
+.section__info--bgrcl .section__info{
+	display: flex;
+	flex-direction: row-reverse;
+} 
+.section__info--img{
+	width:50%;
+	border:1px solid silver;
+	height:100%;
+}
+#carouselExampleIndicators,#carouselExampleControls,#carouselExampleCaptions,#carouselExampleFade{
+	width:100%;
+	padding:10px;
+}
+.section__info--text{
+	width:50%;
+	padding:0 40px;
+	text-align: left;
+}
+.section__info--text p{
+	padding:15px;
+	font-size: 18px;
+}
+.section__info--text ul li{
+	margin:10px 30px;
+}
+.section__info--text ul li span{
+	color:#51cba3;
+}
+.section__info--text h4{
+	color:#51cba3;
+}
+.section__info--text h4 span{
+	font-size: 80px;
+}
+.section__info--text button{
+	border:1px solid #51cba3;
+	color:#51cba3;
+	padding:10px;
+	width:150px;
+	cursor: pointer;
+	outline: none;
+}
+.section__info--text button:hover{
+	border:1px solid #51cba3;
+	background-color:#51cba3 ;
+	color:white;
+	outline: none;
+}
+.section__info--bgrcl{
+	background-color: rgb(247, 240, 240);
+	margin:100px 0;
+}
+/* footers */
+.footers{
+	width:100%;
+	height:700px;
+	background-color: rgb(39, 31, 47);
+	margin-top:-100px;
+}
+.footer{
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	padding:50px;
+	color:white;
+}
+.footer__recent,.footer__contact{
+	margin-top:20px;
+}
+.footer__info,.footer__recent,.footer__contact{
+	width:33%;
+}
+.footer__info img,.footer__recent h2,.footer__contact h2{
+	padding:0 50px;
+}
+.footer__info p, .footer__recent--p,.footer__contact--p{
+	padding:50px;
+}
+.footer__contact--p p{
+	padding:5px;
+}
+.footer__recent span{
+	color:#51cba3;
+}
+.footer__icon{
+	margin-right:10px;
+}
+.link{
+	text-align: center;
+	color:silver;
+}
+.link span{
+	color: #51cba3;
+}
+.link__icon{
+	padding:20px;
+	font-size: 22px;
+	color:silver;
+}
+.link__icon:hover{
+	color:#51cba3;
+	font-size: 30px;
+}
+@media screen and (max-width:1100px) and (min-width:700px){
+	.name__menu{
+		display: none;
+	}
+	.menu__hidden .name__menu{
+		display: block;
+		width:80%;
+	}
+	.name__menu ul{
+		justify-content: space-between;	
+	}
+	/*  */
+	.section__info{
+		display: block;
+	}
+	.section__info--text{
+		width:100%;
+		margin:10px;
+	}
+	.section__info--img{
+		width:100%;
+	}
+	.section__info--bgrcl .section__info{
+		display:block;
+	}
+	/*  */
+	.footer{
+		padding:10px;
+		justify-content: space-between;
+	}
+	.footer__info p, .footer__recent--p,.footer__contact--p{
+		padding:20px;
+	}
+	.footer__recent,.footer__contact{
+		margin-top:15px;
+	}
+	.footer__info img,.footer__recent h2,.footer__contact h2{
+		padding:10px;
+	}
+} 
+@media screen and (max-width:699px) and (min-width:100px){
+	.header{
+		text-align: center;
+	}
+	.name__menu{
+		display: none;
+	}
+	.menu__hidden .name__menu{
+		display: none;
+	}
+	.address{
+		display: block;
+	}
+	.address__home, .address__phone{
+		padding: 2px;
+	}
+	.name{
+		display: block;
+		align-items: center;
+	}
+	.name__bookRooms button{
+		margin-top: 20px;
+	}
+	.menu{
+		display: block;
+	}
+	/*  */
+	.background__main {
+		height:1000px;
+	}
+	.background__main p{
+		width:90%;
+		padding:5px;
+	}
+	.background__main h2{
+		font-size: 16px;
+	}
+	.section__info,.section__info--bgrcl .section__info{
+		display: block;
+	}
+	.section__info--text,.section__info--bgrcl .section__info--text{
+		width:100%;
+		margin:10px;
+		padding:10px 0px;
+	}
+	.section__info--img,.section__info--bgrcl .section__info--img{
+		width:100%;
+	}
+	/*  */
+	.footers{
+		height:1100px;
+	}
+	.footer{
+		display: block;
+	}
+	.footer__info,.footer__recent,.footer__contact{
+		width:100%;
+	}
+	.footer__info img,.footer__recent h2,.footer__contact h2{
+		padding:5px;
+		margin-top:50px;
+	}
+	.footer__info p, .footer__recent--p,.footer__contact--p{
+		width:90%;
+		padding:0px;
+	}
+}
